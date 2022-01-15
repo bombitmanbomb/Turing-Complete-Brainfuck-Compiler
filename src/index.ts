@@ -13,27 +13,27 @@ function myParseInt<T>(value: string, dummyPrevious: T): number {
   return parsed
 }
 const TuringByte = {
-  ">": 0x00,
-  "<": 0x01,
-  "+": 0x02,
-  "-": 0x03,
-  ".": 0x04,
-  ",": 0x05,
-  "[": 0x06,
-  "]": 0x07,
-  "EOF": 0x08
+  ">": 0b0000,
+  "<": 0b0001,
+  "+": 0b0010,
+  "-": 0b0011,
+  ".": 0b0100,
+  ",": 0b0101,
+  "[": 0b0110,
+  "]": 0b0111,
+  "EOF": 0b1000
 }
 const WhiteSpace = 0x20
 const Newline = `\r\n`
 const BrainfuckByte = {
-  0x3e: 0x00,
-  0x3c: 0x01,
-  0x2b: 0x02,
-  0x2d: 0x03,
-  0x2e: 0x04,
-  0x2c: 0x05,
-  0x5b: 0x06,
-  0x5d: 0x07,
+  0x3e: 0b0000,
+  0x3c: 0b0001,
+  0x2b: 0b0010,
+  0x2d: 0b0011,
+  0x2e: 0b0100,
+  0x2c: 0b0101,
+  0x5b: 0b0110,
+  0x5d: 0b0111,
 }
 
 class ProgramAddress { }
